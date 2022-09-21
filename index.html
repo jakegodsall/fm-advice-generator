@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <title>Frontend Mentor | Advice generator app</title>
 
-  Advice #<!-- Advice ID goes here -->
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="dist/main.css" />
+    </head>
+    <body>
+        <div class="advice__card">
+            <h5 class="advice__number">Advice #</h5>
+            <h3 class="advice__main-text" id="advice">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, ipsa? Maiores quia
+                necessitatibus sit odio mollitia quasi obcaecati reprehenderit expedita?
+            </h3>
+            <img class="advice__divider" src="images/pattern-divider-mobile.svg" alt="divider" />
+            <img class="advice__die" id="btn" src="images/icon-dice.svg" alt="Dice" />
+        </div>
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        "<!-- Advice text goes here -->"
+
+        <div class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+            >. Coded by <a href="https:://github.com/jakegodsall">Jake Godsall</a>.
+        </div>
+        <script src="js/script.js"></script>
+    </body>
 </html>

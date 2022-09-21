@@ -1,0 +1,34 @@
+.advice__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-grey-blue);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.advice__number {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--neon-green);
+}
+
+.advice__divider {
+    margin-bottom: 2.5rem;
+}
+
+.advice__die {
+    position: absolute;
+    bottom: -1.5rem;
+    background-color: var(--neon-green);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.advice__die:hover {
+    box-shadow: 0 0 3rem 2px var(--neon-green);
+}
