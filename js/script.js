@@ -1,23 +1,24 @@
 const btn = document.getElementById('btn');
+const api = 'https://api.adviceslip.com/advice';
+
+const idContainer = document.getElementById('advice-id');
+const adviceContainer = document.getElementById('advice-content');
 
 btn.addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'https://api.adviceslip.com/advice', true);
+    xhr.open('GET', api, true);
 
-    xhr.send();
+    xhr.responseType = 'json';
 
-    xhr.onreadystatechange = (e) => {
-        const response = xhr.responseText;
+    xhr.onload = () => {
+        const slip = xhr.response.slip;
+        const id = slip.id;
+        const advice = slip.advice;
 
-        console.log(response);
-
-        // const json = JSON.parse(response);
-
-        // console.log(json);
-
-        const advice = document.getElementById('advice');
+        idContainer.innerText = `Advice # ${id}`;
+        adviceContainer.innerText = advice;
     };
 
-    xhr.abort();
+    xhr.send();
 });
