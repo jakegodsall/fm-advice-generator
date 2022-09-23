@@ -30,6 +30,8 @@
     transition: box-shadow 0.2s ease-in-out;
 }
 
-.advice__die:hover {
-    box-shadow: 0 0 3rem 2px var(--neon-green);
+@media (hover: hover) {
+    .advice__die:hover {
+        box-shadow: 0 0 3rem 2px var(--neon-green);
+    }
 }
