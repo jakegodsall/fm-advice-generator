@@ -4,7 +4,7 @@ const api = 'https://api.adviceslip.com/advice';
 const idContainer = document.getElementById('advice-id');
 const adviceContainer = document.getElementById('advice-content');
 
-btn.addEventListener('click', () => {
+const getAdvice = () => {
     const xhr = new XMLHttpRequest();
 
     xhr.open('GET', api, true);
@@ -21,4 +21,8 @@ btn.addEventListener('click', () => {
     };
 
     xhr.send();
-});
+};
+
+getAdvice();
+
+btn.addEventListener('click', getAdvice);
