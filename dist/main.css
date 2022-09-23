@@ -27,6 +27,7 @@ body {
   align-items: center;
   background-color: var(--dark-grey-blue);
   border-radius: 10px;
+  max-width: 550px;
   padding: 2rem;
   text-align: center;
   position: relative;
