@@ -25,4 +25,10 @@ const getAdvice = () => {
 
 getAdvice();
 
-btn.addEventListener('click', getAdvice);
+btn.addEventListener('click', () => {
+    setTimeout(() => {
+        btn.classList.toggle('waiting');
+    }, 3000);
+    btn.classList.toggle('waiting');
+    setTimeout(getAdvice, 3000);
+});

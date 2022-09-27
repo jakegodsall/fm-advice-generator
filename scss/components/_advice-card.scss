@@ -30,6 +30,23 @@
     transition: box-shadow 0.2s ease-in-out;
 }
 
+.waiting {
+    animation: spinner 2s linear infinite;
+}
+
+.waiting:hover {
+    box-shadow: 0 0 0 0 black !important;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media (hover: hover) {
     .advice__die:hover {
         box-shadow: 0 0 3rem 2px var(--neon-green);
