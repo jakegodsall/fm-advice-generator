@@ -1,4 +1,4 @@
-const btn = document.getElementById('btn');
+const img = document.getElementById('die');
 const api = 'https://api.adviceslip.com/advice';
 
 const idContainer = document.getElementById('advice-id');
@@ -25,10 +25,13 @@ const getAdvice = () => {
 
 getAdvice();
 
-btn.addEventListener('click', () => {
+img.addEventListener('click', (e) => {
+    if (e.target.classList.contains('waiting')) {
+        return;
+    }
     setTimeout(() => {
-        btn.classList.toggle('waiting');
+        e.target.classList.toggle('waiting');
+        getAdvice();
     }, 3000);
-    btn.classList.toggle('waiting');
-    setTimeout(getAdvice, 3000);
+    e.target.classList.toggle('waiting');
 });
