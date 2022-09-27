@@ -17,7 +17,7 @@ const getAdvice = () => {
         const advice = slip.advice;
 
         idContainer.innerText = `Advice # ${id}`;
-        adviceContainer.innerText = advice;
+        adviceContainer.innerText = `"${advice}"`;
     };
 
     xhr.send();
