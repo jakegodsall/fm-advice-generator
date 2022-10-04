@@ -24,6 +24,7 @@ const getAdvice = () => {
             const advice = adviceObject.slip.advice;
             const adviceID = adviceObject.slip.id;
 
+            adviceContainer.classList.toggle('show');
             idContainer.innerText = `Advice # ${adviceID}`;
             adviceContainer.innerText = `"${advice}"`;
         });
@@ -38,8 +39,14 @@ button.addEventListener('click', (e) => {
         return;
     }
     setTimeout(() => {
+        // toggle waiting ON
         e.target.classList.toggle('waiting');
         getAdvice();
-    }, 3000);
+    }, 1000);
     e.target.classList.toggle('waiting');
+
+    setTimeout(() => {
+        // toggle waiting OFF
+        adviceContainer.classList.toggle('show');
+    }, 300);
 });

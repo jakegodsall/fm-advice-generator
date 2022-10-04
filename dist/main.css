@@ -42,8 +42,50 @@ body {
 .advice__main-text {
   font-size: 1.3rem;
   max-width: 400px;
+  -webkit-animation: animate 2s linear forwards;
+          animation: animate 2s linear forwards;
+  -webkit-animation: smoothout 1s ease;
+          animation: smoothout 1s ease;
 }
 
+.show {
+  -webkit-animation: smoothin 2s ease;
+          animation: smoothin 2s ease;
+}
+
+@-webkit-keyframes smoothin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes smoothin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes smoothout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes smoothout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .advice__divider {
   margin-bottom: 2.5rem;
 }

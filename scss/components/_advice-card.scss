@@ -19,6 +19,30 @@
 .advice__main-text {
     font-size: 1.3rem;
     max-width: 400px;
+    animation: animate 2s linear forwards;
+    animation: smoothout 1s ease;
+}
+
+.show {
+    animation: smoothin 2s ease;
+}
+
+@keyframes smoothin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes smoothout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .advice__divider {
@@ -32,6 +56,7 @@ button {
     background-color: transparent;
     border: none;
 }
+
 .advice__die {
     background-color: var(--neon-green);
     padding: 1rem;
