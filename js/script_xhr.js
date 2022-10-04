@@ -23,10 +23,7 @@ const getAdvice = () => {
     xhr.send();
 };
 
-// make initial call of getAdvice
-window.addEventListener('click', () => {
-    getAdvice();
-});
+getAdvice();
 
 // animate button and call getAdvice
 button.addEventListener('click', (e) => {

@@ -27,9 +27,7 @@ const getAdvice = () => {
 };
 
 // make initial call of getAdvice
-window.addEventListener('click', () => {
-    getAdvice();
-});
+getAdvice();
 
 // animate button and call getAdvice
 button.addEventListener('click', (e) => {
