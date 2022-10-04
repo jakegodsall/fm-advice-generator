@@ -13,8 +13,11 @@ const getAdvice = () => {
 
     fetch(api, {
         headers: requestHeaders,
+        cache: 'no-cache',
     })
         .then((response) => {
+            console.log(response);
+            console.log(response.cache);
             return response.json();
         })
         .then((adviceObject) => {
