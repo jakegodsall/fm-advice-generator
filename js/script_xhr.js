@@ -9,10 +9,10 @@ const getAdvice = () => {
 
     xhr.open('GET', api, true);
 
-    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.setRequestHeader('accept', 'application/json');
 
     xhr.onload = () => {
-        const slip = xhr.response.slip;
+        const slip = JSON.parse(xhr.response).slip;
         const id = slip.id;
         const advice = slip.advice;
 
