@@ -33,11 +33,13 @@ Users should be able to:
 
 ### Extra features added
 
+&#9745; Scripts using both the XMLHttpRequest object and the Fetch API.
+
 &#9745; Disabled the button for the duration of caching to allow for better UX.
 
 &#9745; Added loading animation to the button during its disabled period.
 
-&#9744; Smooth transitions of advice text content.
+&#9745; Smooth transitions of advice text content.
 
 ### Screenshot
 
