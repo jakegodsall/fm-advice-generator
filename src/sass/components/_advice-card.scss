@@ -5,11 +5,17 @@
     align-items: center;
     background-color: var(--dark-grey-blue);
     border-radius: 10px;
-    width: 550px;
-    height: 300px;
-    padding: 2rem;
+    padding: 1rem;
+    margin-inline: 1rem;
     text-align: center;
     position: relative;
+    transition: all 0.3s ease-in-out;
+    height: 240px;
+
+    @media screen and (min-width: 600px) {
+        height: 300px;
+        width: 540px;
+    }
 }
 
 .advice__number {
