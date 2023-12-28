@@ -16,3 +16,6 @@
 .prettierignore
 .vscode/settings.json
 .vscode
+
+# npm
+node_modules/
