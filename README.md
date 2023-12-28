@@ -1,23 +1,7 @@
-# Frontend Mentor - Advice generator app solution
+# Advice Generator App (Frontend Mentor)
 
-This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). 
+This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db).
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-## Table of contents
-
-- [Frontend Mentor - Advice generator app solution](#frontend-mentor---advice-generator-app-solution)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Extra features added](#extra-features-added)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Useful resources](#useful-resources)
-  - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -43,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="completed-screenshot.png" >
+<img src="./completed/completed-screenshot.png" >
 
 ### Links
 
@@ -59,7 +43,7 @@ Users should be able to:
 -   SASS
 -   7-1 SASS Architecture
 -   Mobile-first workflow
--   XMLHttpRequest object
+-   XMLHttpRequest
 
 ### What I learned
 
@@ -83,3 +67,15 @@ Users should be able to:
 
 I received significant advice regarding the caching of API responses from
 [Alexander Morse](https://github.com/Sakeran) on Frontend Mentor.
+
+### Notes
+
+This project was originally completed on 23rd September 2022.
+
+This repository is part of a series of repositories that have recently been cleaned and updated as part of an overhaul of my GitHub profile. The purpose of this overhaul was to ensure that each repository reflects my current development standards and practices, and to provide a cleaner, more professional appearance.
+
+The project is updated as of 28th December 2023.
+
+## License
+
+This project is open source and available under the [MIT License](https://github.com/jakegodsall/fm-advice-generator/blob/main/LICENSE).
