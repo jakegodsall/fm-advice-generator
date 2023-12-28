@@ -1,10 +1,12 @@
 .advice__card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: var(--dark-grey-blue);
     border-radius: 10px;
-    max-width: 550px;
+    width: 550px;
+    height: 300px;
     padding: 2rem;
     text-align: center;
     position: relative;
